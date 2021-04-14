@@ -57,7 +57,7 @@ class Report(object):
         session.post(url, data=data, headers=headers)
         data = session.get("http://weixine.ustc.edu.cn/2020").text
         soup = BeautifulSoup(data, 'html.parser')
-        pattern = re.compile("2020-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}")
+        pattern = re.compile("2021-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}")
         token = soup.find(
             "span", {"style": "position: relative; top: 5px; color: #666;"})
         flag = False
@@ -82,8 +82,11 @@ class Report(object):
         data = {
             'model': 'uplogin.jsp',
             'service': 'http://weixine.ustc.edu.cn/2020/caslogin',
+            'warn': '',
+            'showCode': '',
             'username': self.stuid,
             'password': str(self.password),
+            'button': ''
         }
         session = requests.Session()
         session.post(url, data=data)
