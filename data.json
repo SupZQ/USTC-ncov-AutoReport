@@ -5,7 +5,7 @@
     "gps_province": "",
     "now_city": "340100",
     "gps_city": "",
-    "now_country": "",
+    "now_country": "340104",
     "gps_country": "",
     "now_detail":"",
     "is_inschool": "6",
@@ -21,6 +21,6 @@
     "is_goto_danger": 0,
     "jinji_lxr": "王重生",
     "jinji_guanxi": "父子",
-    "jiji_mobile": 18279770966,
+    "jiji_mobile": "18279770966",
     "other_detail": ""
 }
